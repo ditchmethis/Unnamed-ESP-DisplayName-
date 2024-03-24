@@ -2355,7 +2355,7 @@ local function UpdatePlayerData()
 
 						if Options.ShowName.Value then
 							NameTag.Visible		= true;
-							NameTag.Text		= v.Name .. (CustomPlayerTag and CustomPlayerTag(v) or '');
+							NameTag.Text		= v.DisplayName .. (CustomPlayerTag and CustomPlayerTag(v) or '');
 							NameTag.Size		= Options.TextSize.Value;
 							NameTag.Outline		= Options.TextOutline.Value;
 							NameTag.Position	= V2New(ScreenPositionUpper.X, ScreenPositionUpper.Y) - V2New(0, NameTag.TextBounds.Y);
